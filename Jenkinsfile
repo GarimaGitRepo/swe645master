@@ -1,7 +1,7 @@
 pipeline {
   agent any
 	environment {
-		DOCKERHUB_PASS = 'zameer@0497'
+		DOCKERHUB_PASS = 'Zameer@0497'
 	}
 	stages {
 		stage("Building the Student Survey Image") {
@@ -11,7 +11,7 @@ pipeline {
 					sh 'rm -rf *.war'
 					sh 'jar -cfv SWE645.war -C surveywebapp/ .'
 					sh 'echo ${BUILD_TIMESTAMP}'
-					sh "docker login -u syedzameer0497 -p zameer@0497"
+					sh "docker login -u syedzameer0497 -p Zameer@0497"
 					def customImage = docker.build("syedzameer0497/swe645hub:${BUILD_TIMESTAMP}")
 				}
 			}
