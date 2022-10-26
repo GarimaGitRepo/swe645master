@@ -9,7 +9,7 @@ pipeline {
 				script {
 				  checkout scm
 					sh 'rm -rf *.war'
-					sh 'jar -cfv SWE645.war -C surveyweapp/ .'
+					sh 'jar -cfv SWE645.war -C surveywebapp/ .'
 					sh 'echo ${BUILD_TIMESTAMP}'
 					sh "docker login -u syedzameer0497 -p zameer@0497"
 					def customImage = docker.build("syedzameer0497/swe645hub:${BUILD_TIMESTAMP}")
