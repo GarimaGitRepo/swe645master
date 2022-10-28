@@ -14,7 +14,7 @@ pipeline {
 					sh 'docker login -u syedzameer0497 -p Zameer@0497'
 					sh 'echo hello'
 					sh 'ls -l'
-					sh 'docker build -t syedzameer0497/swe645hub:${BUILD_ID}'
+					sh 'docker build -t syedzameer0497/swe645hub:${BUILD_ID} .'
 					//sh 'docker push syedzameer0497/swe645hub:${env.BUILD_ID}'
 					//def customImage = docker.build("syedzameer0497/swe645hub:${BUILD_TIMESTAMP}")
 				}
