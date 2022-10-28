@@ -12,7 +12,7 @@ pipeline {
 					sh 'jar -cfv SWE645.war -C surveywebapp/ .'
 					sh 'echo ${BUILD_TIMESTAMP}'
 					sh 'docker login -u syedzameer0497 -p Zameer@0497'
-					sh 'cat Reached Here'
+					sh 'echo hello'
 					def customImage = docker.build("syedzameer0497/swe645hub:${BUILD_TIMESTAMP}")
 				}
 			}
