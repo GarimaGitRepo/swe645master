@@ -10,11 +10,6 @@ pipeline {
         stage("Checkout code") {
             steps {
                 checkout scm
-                sh 'ls -l'
-                sh 'rm -rf *.war'
-                sh 'ls -l'
-                sh 'jar -cvf SWE645.war -C surveywebapp/ .'
-                sh 'ls -l'
             }
         }
         stage("Build image") {
