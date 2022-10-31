@@ -1,6 +1,11 @@
 # swe645master
 
-Load Balancer ip and link for the web app on kubernetes cluster:  http://34.69.11.71:8080/SWE645/ 
+Cluster Load Balancer ip and link for the web app on kubernetes cluster:  http://34.69.11.71:8080/SWE645/ 
+
+Our homepage is hosted on S3 bucket (Homework - 1): - 
+
+Garima Homepage: http://gausa.com.s3-website-us-east-1.amazonaws.com/
+Zameer Homepage: http://zameerswe645.s3-website-us-east-1.amazonaws.com/
 
 
 Steps Followed:
@@ -21,3 +26,12 @@ Deploy to GKE  -- The newly created docker image is deployed on GKE using the in
 
 Pls also see the video attached.
  
+==================================Contributions==============================
+
+Garima 
+* Created git repo and pushed everything onto git repo.
+* Set up a Jenkins sever , created and configured a jenkins pepline.
+
+Zameer 
+* Built the containerized web application on Docker and pushed it to DockerHub.
+* Set GCP account and created the GCP cluster to deploy the containarized web application.
